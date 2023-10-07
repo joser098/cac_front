@@ -1,0 +1,318 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #343c44;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 1rem;
+}
+
+.logo_titulo {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.logo_titulo img {
+  height: 50px;
+}
+
+.logo_titulo h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: medium;
+  color: #fff;
+}
+
+.lista {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.lista li {
+  list-style-type: none;
+}
+
+.lista a {
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 8px;
+  text-decoration: none;
+}
+
+.a_comun {
+  color: #cdccca;
+}
+
+.tickets {
+  color: #81c53d;
+}
+
+.a_comun:hover {
+  color: #fff;
+}
+
+.section_principal {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  max-height: 450px;
+}
+
+.section_principal img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.textos {
+  position: absolute;
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 0 60px;
+}
+
+.textos h2,
+.textos p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-align: end;
+  margin: 10px 0;
+}
+
+.sombra {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+.btn_1,
+.btn_2 {
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn_1 {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #ccc;
+}
+
+.btn_1:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+.btn_2 {
+  background-color: #4cba4b;
+  border: 1px solid #4cba4b;
+  color: #fff;
+}
+
+.btn_2:hover {
+  background-color: #fff;
+  color: #4cba4b;
+}
+
+.oradores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.oradores_subtitle,
+.oradores_title {
+  margin: 5px 0;
+  color: #343c44;
+}
+
+.oradores_subtitle {
+  font-size: small;
+}
+
+.oradores_title {
+  font-size: xx-large;
+}
+
+.cards_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.invitado_card {
+  max-width: 280px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.invitado_card img {
+  width: 280px;
+  height: 280px;
+  margin-bottom: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.orador_detalles {
+  padding: 0 15px;
+}
+
+.js_span,
+.react_span,
+.negocios_span,
+.startups_span {
+  padding: 4px 6px;
+  border-radius: 20px;
+  font-size: small;
+  font-weight: 700;
+  color: #fff;
+}
+
+.js_span {
+  background-color: #ffd700;
+  color: #000;
+}
+
+.react_span {
+  background-color: #87ceeb;
+}
+
+.negocios_span {
+  background-color: #343c44;
+}
+
+.startups_span {
+  background-color: brown;
+}
+
+.orador_detalles p {
+  color: gray;
+}
+
+.BaAs_section {
+  display: flex;
+}
+
+.BaAs_section img {
+  width: 50%;
+  height: auto;
+}
+
+.BaAs_content {
+  width: 50%;
+  background-color: #343c44;
+  color: #fff;
+  padding: 0 15px;
+  font-size: small;
+}
+
+.BaAs_content h3 {
+  font-size: x-large;
+}
+
+.BaAs_content button {
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #ccc;
+}
+
+.BaAs_content button:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+.form_section,
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.form p {
+  color: #343c44;
+}
+
+.inputs_group {
+  gap: 10px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.form_input {
+  padding: 5px;
+  width: 100%;
+}
+
+.form textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 96%;
+  padding: 10px;
+  margin: 0;
+}
+
+.textarea {
+  width: 100%;
+}
+
+.span {
+  margin: 2px 0 10px 0;
+  font-size: small;
+  text-align: start;
+}
+
+.form button {
+  width: 100%;
+  background-color: #81c53d;
+  border: none;
+  color: #fff;
+  padding: 8px 0;
+  border-radius: 3px;
+}
+
+footer {
+  color: #fff;
+  font-size: x-small;
+  background-color:  #043354;
+  height: 45px;
+  display: flex;
+}
+
+
+
+footer ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer li {
+  list-style-type: none;
+  max-width: 80px;
+}
+
