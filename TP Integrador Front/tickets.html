@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comprar tickets</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo_titulo">
+        <img src="./img/codoacodo.png" alt="" />
+        <h4>Conf Bs As</h4>
+      </div>
+
+      <ul class="lista">
+        <li>
+          <a href="#conferencia" class="a_comun">La conferencia</a>
+        </li>
+        <li>
+          <a href="#oradores" class="a_comun">Los oradores</a>
+        </li>
+        <li>
+          <a href="#fechaYLugar" class="a_comun">El lugar y la fecha</a>
+        </li>
+        <li>
+          <a href="#convertete" class="a_comun">Conviertete en orador</a>
+        </li>
+        <li>
+          <a href="/TP Integrador Front/tickets.html" class="tickets"
+            >Comprar tickets</a
+          >
+        </li>
+      </ul>
+    </header>
+    <main
+      class="container my-4 d-flex flex-column align-items-center justify-content-center"
+    >
+      <section class="w-100 d-flex justify-content-between gap-3 categorias">
+        <article
+          class="d-flex flex-column align-items-center border border-2 border-primary-subtle p-3"
+        >
+          <h5>Estudiante</h5>
+          <p class="text-center">Tiene un descuento</p>
+          <span class="fw-bold">80%</span>
+          <p class="text-center">* presentar documentacion</p>
+        </article>
+        <article
+          class="d-flex flex-column align-items-center border border-2 border-success-subtle p-3"
+        >
+          <h5>Trainee</h5>
+          <p class="text-center">Tiene un descuento</p>
+          <span class="fw-bold">50%</span>
+          <p class="text-center">* presentar documentacion</p>
+        </article>
+        <article
+          class="d-flex flex-column align-items-center border border-2 border-warning-subtle p-3"
+        >
+          <h5>Junior</h5>
+          <p class="text-center">Tiene un descuento</p>
+          <span class="fw-bold">15%</span>
+          <p class="text-center">* presentar documentacion</p>
+        </article>
+      </section>
+
+      <form class="w-100 m-3 tickets_form" id="tickets_form">
+        <p class="text-center">VENTA</p>
+        <h2 class="text-center">VALOR DE TICKET $200</h2>
+
+        <div class="input-group mb-3 gap-3">
+          <input class="form-control" placeholder="Nombre" type="text" id="nombreComprador"/>
+          <input class="form-control" placeholder="Apellido" type="text" />
+        </div>
+        <div class="input-group mb-3">
+          <input class="form-control" placeholder="Correo" type="text"/>
+        </div>
+        <div class="d-flex justify-content-between mb-3 gap-3">
+          <label class="p-0 w-100" for="">
+            Cantidad
+            <input class="form-control" placeholder="cantidad" type="number" id="cantidadTickets"/>
+          </label>
+          <label class="p-0 w-100" for="">
+            Categoria
+            <select class="form-select" id="category">
+              <option value="0">Estudiante</option>
+              <option value="1">Trainee</option>
+              <option value="2">Junior</option>
+            </select>
+          </label>
+        </div>
+
+        <div
+          class="d-flex align-items-center mb-3 show_valor border border-primary-subtle rounded"
+        >
+          <p class="m-0 p-3 text-primary">
+            Total a Pagar: $ <span id="importe"></span>
+          </p>
+        </div>
+
+        <div class="d-flex gap-3">
+          <button class="w-100 btn btn-success" id="borrarBtn">Borrar</button>
+          <button class="w-100 btn btn-success" id="resumerBtn">Resumen</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <ul>
+        <li>Preguntas frecuentes</li>
+        <li>Contactanos</li>
+        <li>Prensa</li>
+        <li>Conferencias</li>
+        <li>Terminos y condiciones</li>
+        <li>Privacidad</li>
+        <li>Estudiantes</li>
+      </ul>
+    </footer>
+    <script src="./index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

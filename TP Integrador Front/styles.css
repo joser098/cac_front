@@ -106,6 +106,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .btn_1 {
@@ -316,3 +317,11 @@ footer li {
   max-width: 80px;
 }
 
+.show_valor {
+  background-color:  #CCE5FF ;
+}
+
+.tickets_form,
+.categorias {
+  max-width: 800px;
+}
